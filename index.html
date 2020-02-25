@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Build a Product Landing Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			header {
+				display: inline-block;
+			}
+			#header-img {
+				max-width: 200px;	display: flex;
+			}
+			@media (max-width: 800px) {
+				.logo > img {
+					margin: 0 auto;
+				}	
+			}
+			a {
+				font-size: 25px;
+				text-align: center;
+			}
+			p {
+				font-size: 15px;
+				text-align: justify;
+				text-justify: inter-word;
+			}
+			h1 {
+					font-size: 40px;
+					text-align: center;
+			}
+			#video {
+				display: block;
+				width: auto;
+				margin: 0 auto; 
+			} 
+			#about, #demo_video, #title, #nav, #contact {
+				margin-top: 50px;
+				margin-bottom: 50px;
+				margin-left: 300px;
+				margin-right: 300px;
+				padding: 0px;
+				justify-content: center;
+				display: flex;
+			}
+			#nav-bar {
+				position: fixed; 
+				top: 0;
+			}     
+		</style>
+	</head>
+
+	<body>
+
+		<header id="header">
+			<div class="logo">
+				<img id="header-img" src="https://i2.wp.com/hardinauditorium.com/wp-content/uploads/2018/10/Bee-Gees-Gold-Logo-WhiteVersion.png?w=2184&ssl=1" height="150" width="300">
+			</div>
+				<nav id="nav-bar">	
+					<a href="#about"      class="nav-link">About</a>|
+					<a href="#demo_video" class="nav-link">Demo Video</a>|
+					<a href="#contact"    class="nav-link">Contact</a>
+				</nav>
+		</header>
+
+		<div class="container">
+			<section id="about">
+				<fieldset>
+					<h1>About Bee Gees</h1>
+					<p>The Bee Gees were a pop music group formed in 1958. Their lineup consisted of brothers Barry, Robin, and Maurice Gibb. The trio were especially successful as a popular music act in the late 1960s and early 1970s, and later as prominent performers of the disco music era in the mid-to-late 1970s. The group sang recognisable three-part tight harmonies; Robin's clear vibrato lead vocals were a hallmark of their earlier hits, while Barry's R&B falsetto became their signature sound during the mid-to-late 1970s and 1980s. The Bee Gees wrote all of their own hits, as well as writing and producing several major hits for other artists.
+					Born on the Isle of Man to English parents, the Gibb brothers lived in Chorlton, Manchester, England until the late 1950s. There, in 1955, they formed the skiffle/rock and roll group the Rattlesnakes. The family then moved to Redcliffe, in the Moreton Bay Region, Queensland, Australia, and then to Cribb Island. After achieving their first chart success in Australia as the Bee Gees with "Spicks and Specks" (their 12th single), they returned to the UK in January 1967, when producer Robert Stigwood began promoting them to a worldwide audience.
+					The Bee Gees have sold between 120 million to 220 million records worldwide, making them one of the world's best-selling artists of all time. They were inducted into the Rock and Roll Hall of Fame in 1997; the presenter of the award to "Britain's first family of harmony" was Brian Wilson, historical frontman of the Beach Boys, another "family act" featuring three harmonising brothers. The Bee Gees' Hall of Fame citation says, "Only Elvis Presley, the Beatles, Michael Jackson, Garth Brooks and Paul McCartney have outsold the Bee Gees". The Bee Gees are the third most successful band in Billboard charts history after The Beatles and The Supremes.
+					Following Maurice's death in January 2003 at the age of 53, Barry and Robin retired the group's name after 45 years of activity. In 2009, Robin announced that he and Barry had agreed the Bee Gees would re-form and perform again. Robin died in May 2012, aged 62, after a prolonged struggle with cancer and other health problems, leaving Barry as the only surviving member of the group.</p>
+					<a href="#"class="nav-link">Go Top</a>
+				</fieldset>
+			</section>
+		
+			<section id="demo_video">
+				<fieldset>
+					<h1>Demo Video</h1>
+					<video id="video" controls>
+						<source src="videos/video_01.mp4" type="video/mp4">
+						<source src="videos/video_01.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+					<a href="#"class="nav-link">Go Top</a>
+				</fieldset>
+			</section>
+		
+			<section id="contact">
+				<fieldset>
+					<h1>Contact</h1>
+					<form id="form" action="https://www.freecodecamp.com/email-submit" method="put">
+						<input type="email" id="email" name="email" placeholder="Enter Email to Join the Community">
+						<input type="submit" id="submit">
+					</form>
+				</fieldset>
+			</section>
+
+		</div>
+
+
+		<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	
+	</body>
+
+</html>
